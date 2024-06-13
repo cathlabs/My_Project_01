@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-bg-color: rgba(188, 188, 188, 0.704);
+    --container-demo: #FFB11A;
+    --schrift: black;
+    --container-margin: 10px;
+    --color_header: black;
+    --color: #9c4141ef;
+
+
+}
+
+body{
+    padding:2% 7%;
+    background: linear-gradient(rgba(255, 255, 255, 0.769),rgba(255, 255, 255, 0.689)), url("https://images.unsplash.com/photo-1634207284450-f6ad4451b94f?q=80&w=3580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+.btn_dsp_minus {
+    display: none;
+}
+.cls2 {
+    margin-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--schrift);
+}
+
+.life-savers-regular {
+    font-family: "Life Savers", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--schrift);
+}
+  
+.life-savers-bold {
+    font-family: "Life Savers", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--schrift);
+
+}
+  
+.life-savers-extrabold {
+    font-family: "Life Savers", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--schrift);
+}
+
+
+#icon_logo {
+    height: 70px;
+    width: 70px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo a {
+    color: var(--schrift);
+}
+
+.hidden_logo {
+    display: none;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.icon_burger {
+    height: 50px;
+    width: 40px;
+}
+.btn_burger {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.burger_logo{
+    /* background-color: white;
+    padding: 5%; */
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display_navBar {
+    background-color: rgba(255, 255, 255, 0.922);
+    box-shadow: 0 20px 100px rgb(255, 255, 255);
+    padding: 30px;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+    display: none;
+    z-index: 1000;
+}
+
+.display_navBar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--schrift);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.display_navBar ul li a{
+    font-size: 1.5rem ;
+    text-align: center;
+}
+
+
+.color_header {
+    color: var(--color_header)!important;
+}
+
+
+.img_grp {
+    width: auto;
+    height: 200px;
+}
+
+.grp {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+
+.themen {
+    display: flex;
+    text-align: center;
+    gap: 2%;
+    align-items: center;
+    justify-content:flex-start ;
+}
+
+.grp_1{
+    border: 2px solid #E4D9F9;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.324);
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    width: 150px;
+}
+.grp_1:hover {
+    box-shadow: 0 10px 30px #E4D9F9;
+}
+
+.grp_2{
+    border: 2px solid #9a9797c0;
+    padding: 10px;
+    background-color: rgba(188, 188, 188, 0.324);
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.grp_2:hover {
+    box-shadow: 0 10px 30px #9A9797;
+}
+
+.grp_3{
+    border: 2px solid #FBE7E7;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.323);
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.grp_3:hover {
+    box-shadow: 0 10px 30px #FBE7E7;
+}
+
+.theme span {
+    font-size: 2rem;
+    color: black !important;
+}
+
+.theme button {
+    font-size: 1rem;
+   border: 0;
+   width: 100px;
+   height: 45px;
+   border-radius: 20px;
+   cursor: pointer;
+   transition-duration: 0.3s;
+}
+
+.theme button:hover {
+    transform: scale(1.1);
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn_1_theme {
+    background-color: #4e86f793;
+    cursor: pointer;
+}
+.btn_2_theme {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
+.btn_3_theme {
+    color: #BB4242;
+    background-color: #dfdeffa8;
+    cursor: pointer;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(1, 1fr);
+    gap: 2%;
+    padding: 5% 0;
+    align-content: center;
+}
+
+.gr {
+    /* width: auto; */
+    height: auto;
+    border-radius: 30px;
+    background-color: var(--container-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.g1 img{
+    width: 180px;
+}
+.g2 img{ 
+    width: 250px;
+}
+
+.gr p{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--schrift);
+    padding: 5px;
+}
+
+
+input {
+    border: 0;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-bg-color);
+    margin-top: 2%;
+    border-radius: 20px;
+    padding: 5%;
+    justify-content: space-around;
+    gap: 20px;
+    width: auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+.info_company {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+.about_products_help {
+    display: flex;
+    gap: 20px;
+}
+
+ul {
+ list-style: none;
+}
+
+.about_products_help div ul li a {
+    color: var(--schrift);
+    font-size: 1.2rem;
+}
+
+.comp_logo_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.tog {
+    font-size: 1.5rem;
+}
+
+.stars {
+    color: #FFB11A;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.rights {
+    text-align: center;
+    color:var(--schrift);
+}
+
+
+.black_font{
+    color: var(--schrift);
+}
+
+/* demo_version */
+
+.demo_version {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-row: auto;
+    border: 2px solid #ffffff4d;
+    border-radius: 20px;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.331);
+    backdrop-filter: blur(5px);
+    justify-content: center ;
+    padding: 20px;
+    gap: 20px;
+}
+
+.classification {
+    border: 2px solid rgba(255, 255, 255, 0.359);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    background-color:var(--container-bg-color);
+}
+
+.round {
+    background-color: rgba(255, 255, 255, 0.251);
+    height: 90px;
+    width: 90px;
+    border: 2px solid rgba(255, 255, 255, 0.064);
+    border-radius: 100%;
+    font-size: 1.1rem;
+    padding: 2px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.542);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.round:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.542);
+}
+
+.todolist_demo {
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e e";
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-rows: auto; 
+    gap: 20px;
+}
+
+
+.notes_1 {
+    grid-area: a;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.gr_name {
+    border: 2px solid rgba(255, 255, 255, 0.404);
+    width: auto;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--container-bg-color);
+}
+
+.reminder_2 {
+    grid-area: b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project_3 {
+    grid-area: c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calendar_4 {
+    grid-area: d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todolist_5 {
+    grid-area: e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_text {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(255, 255, 255, 0.404);
+    width: auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.324);
+    gap: 5px;
+}
+
+.input_text input{
+    font-size: 1.0rem;
+}
+
+
+
+.check_box {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.check_box input[type="text"] {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 2px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.check_box input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+.plus {
+    height: 10px;
+    width: 10px;
+}
+
+.btn_plus {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* slider */
+
+
+
+@media screen and (max-width: 1010px) {
+    .todolist_demo {
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e e";
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-template-rows: auto; 
+    }
+    #theMan {
+        height:500px;
+        width: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 780px){
+    .inf_about h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    }
+    .inf_about h2,
+    .stars {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .round{
+        width: 80px;
+        height: 80px;
+    }
+
+    .input_text input,
+    .about_products_help div ul li a,
+    .theme button,
+    .display_navBar ul li a,
+    .check_box input[type="text"],
+    .form_part div div input {
+        font-size: 0.8rem;
+    }
+
+    .grid button, 
+    .grid p, 
+    .tog, 
+    .gr_name,
+    .input_text span input,
+    .gr p,
+    .round,
+    .inf_about a,
+    .theme span,
+    
+    .form_part div div label,
+    .form_part div div input,
+    .logo {
+        font-size: 1rem;
+    }
+
+    .global h3, 
+    .forms h3, 
+    .title{
+        font-size: 1.5rem;
+    }
+
+    #theMan {
+        height:400px;
+        width: auto;
+    }
+
+
+    .rights {
+        font-size: 0.3rem;
+    }
+
+    .logo_s{
+        width: 30px;
+    }
+    .todolist_demo {
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e e";
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-template-rows: auto; 
+    }
+
+    #header_schrift {
+        font-size: 1rem;
+    }
+    #icon_logo {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 681px){
+    /* .themen{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .classification  {
+        padding: 10px;
+    }
+    .grid button {
+        padding: 5px;
+    }
+    .icon_func {
+        width: 30px;
+    }
+    .gr_name,
+    .round,
+    .display_navBar ul li a {
+        font-size: 0.7rem;
+    }
+
+    .round{
+        width: 60px;
+        height: 60px;
+    }
+    .display_navBar {
+        width: 250px;
+    }
+
+    .img_grp {
+        height: 100px;
+    }
+    .inf_about h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        }
+    .inf_about h2,
+    .stars {
+            font-size: 1rem;
+            text-align: center;
+    }
+    
+    #theMan {
+        height:300px;
+        width: auto;
+    }
+
+    .g1 img {
+        width: 120px ;
+    }
+    .g2 img {
+        width: 160px;
+    }
+
+    .func {
+    height: 350px;
+    display: grid;
+    grid-template-areas: 
+    "item_1 item_2 item_3"
+    "item_1 item_4 item_3"
+    "item_5 item_5 item_6";
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2%;
+    column-gap: 2%;
+    grid-auto-rows: minmax(auto, auto);
+    }
+    .logo_s{
+        width: 20px;
+    }
+    .icon_burger{
+        width: 30px;
+        height: 40px;
+    }
+    #icon_logo {
+        height: 55px;
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+     .themen{
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .theme button{
+        height: 20px;
+        width: 50px;
+    }
+
+    .todolist_demo {
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e e";
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-template-rows: auto; 
+    }
+
+    .g1 img {
+        width: 90px ;
+    }
+    .g2 img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    
+    .classification  {
+        padding: 8px;
+    }
+    #icon_logo {
+        height: 45px;
+        width: 45px;
+    }
+    .icon_func{
+        width: 40px;
+    }
+    .round {
+        width: 50px;
+        height: 50px;
+    }
+    .inf_about h1 {
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .inf_about h2,
+    .logo {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .input_text input,
+    .about_products_help div ul li a,
+    .theme button,
+    .form_part div div label,
+    .form_part div div input,
+    .display_navBar ul li a  {
+        font-size: 0.6rem;
+    }
+    
+    .grid button, 
+    .grid p, 
+    .tog, 
+    .gr_name,
+    .input_text span input,
+    .gr p,
+    .round,
+    .inf_about a,
+    .theme span,
+    .check_box input[type="text"],
+    .send_btn,
+    #register_error,
+    #register_succed  {
+        font-size: 0.7rem;
+    }
+    
+    .global h3, 
+    .forms h3, 
+    .title,
+    .stars{
+        font-size: 0.8rem;
+    }
+    #header_schrift {
+        font-size: 0.9rem;
+    }
+    .input_field {
+        width: 300px;
+    }
+    #theMan {
+        height:200px;
+        width: auto;
+    }
+    .display_navBar {
+        width: 250px;
+    }
+    .icon_burger{
+       width: 20px;
+        height: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    .theme button{
+        height: 15px;
+    }
+    #icon_logo {
+        height: 30px;
+        width: 30px;
+    }
+    .icon_burger{
+        width: 15px;
+        height: 25px;
+    }
+    .round {
+        width: 40px;
+        height: 40px;
+    }
+
+    #header_schrift,
+    .logo {
+        font-size: 0.6rem;
+    }
+    .inf_about h1 {
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .inf_about h2,
+    .stars {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    
+    .input_text input,
+    .about_products_help div ul li a,
+    .theme button,
+    .form_part div div label,
+    .form_part div div input,
+    .display_navBar ul li a  {
+        font-size: 0.4rem;
+        }
+    
+    .grid button, 
+    .grid p, 
+    .tog, 
+    .gr_name,
+    .input_text span input,
+    .gr p,
+    .round,
+    .inf_about a,
+    .theme span,
+    .check_box input[type="text"],
+    .send_btn,
+    #register_error,
+    #register_succed  {
+        font-size: 0.5rem;
+    }
+    
+    .global h3, 
+    .forms h3, 
+    .title{
+        font-size: 0.6rem;
+        }
+    #header_schrift {
+        font-size: 0.7rem;
+        }
+    .input_field {
+        width: 200px;
+        }
+    #theMan {
+        height:200px;
+        width: auto;
+        }
+    .classification  {
+        padding: 7px;
+    }
+    .icon_func {
+        width: 30px;
+    }
+}
