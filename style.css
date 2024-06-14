@@ -812,17 +812,21 @@ hr {
 .logo_s {
     width: 50px;
 }
-/* 
+
 @media screen and (max-width: 1150px){
     .themen .grp{
         display: flex;
+        flex-direction: column;
     }
-} */
+}
 
 
 
 @media screen and (max-width: 1010px) {
-    
+    .themen .grp{
+        display: flex;
+        flex-direction: column;
+    }
     .todolist_demo {
         display: grid;
         grid-template-areas: 
@@ -843,6 +847,7 @@ hr {
 @media screen and (max-width: 780px){
     .themen .grp{
         display: flex;
+        flex-direction: row;
     }
     .theme button {
         width: 100px;

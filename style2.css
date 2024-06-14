@@ -519,6 +519,7 @@ ul {
 
 
 @media screen and (max-width: 1010px) {
+    
     .todolist_demo {
         display: grid;
         grid-template-areas: 
