@@ -1,7 +1,7 @@
 const btn_lila = document.querySelector('.btn_1_theme');
 const btn_grey = document.querySelector('.btn_2_theme');
 const btn_peach = document.querySelector('.btn_3_theme');
-const body = document.body;
+const body = document.querySelector('body')
 const img_global = document.querySelector('.img_global');
 const icon_logo_pg2 = document.querySelector('#icon_logo_pg2');
 const icon_burger = document.querySelector('.icon_burger');
@@ -85,6 +85,7 @@ btn_burger.addEventListener('click', ()=> {
         }
     })
 })
+
 
 
 btn_dsp_minus.addEventListener('click', () => {

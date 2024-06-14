@@ -488,7 +488,7 @@ ul {
 
 .check_box input[type="text"] {
     flex-grow: 1;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 2px;
     border: 0;
     border-radius: 5px;
@@ -512,9 +512,10 @@ ul {
     margin-top: 10px;
 }
 
-
-/* slider */
-
+.function_q {
+    padding-top: 2%;
+    opacity: 50%;
+}
 
 
 @media screen and (max-width: 1010px) {
@@ -542,7 +543,7 @@ ul {
     text-align: center;
     }
     .inf_about h2,
-    .stars {
+    .stars{
         font-size: 1.5rem;
         text-align: center;
     }
@@ -579,7 +580,8 @@ ul {
 
     .global h3, 
     .forms h3, 
-    .title{
+    .title,
+    .function_q {
         font-size: 1.5rem;
     }
 
@@ -782,7 +784,8 @@ ul {
     .global h3, 
     .forms h3, 
     .title,
-    .stars{
+    .stars,
+    .function_q{
         font-size: 0.8rem;
     }
     #header_schrift {
