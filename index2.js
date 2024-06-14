@@ -70,8 +70,6 @@ btn_peach.addEventListener('click', () => {
     scrisul.forEach(scris => scris.style.color = 'black')
 });
 
-
-
 btn_burger.addEventListener('click', ()=> {
     display_navBar.style.display='block';
     display_navBar.style.justifyContent= "center";
@@ -85,8 +83,6 @@ btn_burger.addEventListener('click', ()=> {
         }
     })
 })
-
-
 
 btn_dsp_minus.addEventListener('click', () => {
     display_navBar.style.display = 'none';
