@@ -371,7 +371,6 @@ a {
     background-color: var(--container-bg-color);
 }
 
-
 .item_5 {
     grid-area: item_5;
     background-color: var(--container-demo);
@@ -637,7 +636,6 @@ ul {
     gap: 20px;
 }
 
-
 .notes_1 {
     grid-area: a;
     border-radius: 20px;
@@ -664,8 +662,6 @@ ul {
     flex-direction: column;
     gap: 10px;
 }
-
-
 
 .project_3 {
     grid-area: c;
@@ -707,13 +703,6 @@ ul {
     font-size: 1.0rem;
 }
 
-/* .check_box {
-    display: flex;
-    gap: 10px;
-    width: auto;
-} */
-
-
 .check_box {
     display: flex;
     align-items: center;
@@ -732,7 +721,6 @@ ul {
     width: 20px;
     height: 20px;
 }
-
 
 .plus {
     height: 10px;
@@ -756,12 +744,12 @@ ul {
     display:none;
     padding: 10px;
 }
+
 #register_succed {
     color: rgb(0, 255, 0);
     display: none;
     padding: 5px;
 }
-
 
 /* slider */
 
@@ -819,8 +807,6 @@ hr {
         flex-direction: column;
     }
 }
-
-
 
 @media screen and (max-width: 1010px) {
     .themen .grp{
