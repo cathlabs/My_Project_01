@@ -813,7 +813,17 @@ hr {
     width: 50px;
 }
 
+@media screen and (max-width: 1150px){
+    .themen .grp{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
 @media screen and (max-width: 1010px) {
+    
     .todolist_demo {
         display: grid;
         grid-template-areas: 
